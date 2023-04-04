@@ -9,7 +9,9 @@
 		WRITED ASC
 	</select>
 	<insert id="create" parameterType="hashmap">
-		INSERT INTO REPLYS(ID, MOIM_ID, WRITER,COMMENT)
-		VALUES(REPLYS_SEQ.NEXTVAL, #{moimId}, #{writer}, #{comment})
+		INSERT INTO REPLYS(ID,
+		MOIM_ID, WRITER,COMMENT)
+		VALUES(REPLYS_SEQ.NEXTVAL, #{moimId},
+		#{writer}, #{ment})
 	</insert>
 </mapper>
